@@ -70,6 +70,7 @@ int main(void)
 			exit(0);
 		std::cout << buf;
 	}
-
-	
+	close(serverSock);
+	close(proxySock);
+	return (0);
 }

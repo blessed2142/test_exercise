@@ -154,4 +154,8 @@ int main(int argc, char **argv)
 			outf << std::string(512, '_') << std::endl;
 		}
 	}
+	close(proxySock);
+	close(serverSock);
+	close(clientSock);
+	return (0);
 }

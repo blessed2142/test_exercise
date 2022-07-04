@@ -36,5 +36,6 @@ int main(void)
 		send(proxySock, std::string(buf).c_str(),
 		std::string(buf).size(), 0);
 	}
+	close(proxySock);
 	return (0);
 }
